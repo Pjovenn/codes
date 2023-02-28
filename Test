@@ -1,9 +1,0 @@
-#include <iostream>
-
-Using namespace STD;
-
-Int main()
-{
-Cout << "hello"; 
-Return 0;
-}
