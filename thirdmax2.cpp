@@ -14,7 +14,7 @@ int len = sizeof(arr)/sizeof(arr[0]); //determine the size of array sizeofarr(4*
 sort(arr, arr+len, greater<int>()); //sorting algorithm that sorts elements in a descending order
 
 //optional
-for(int i=0; i<len; i++)
+for(int i=0; i<len; i++) // prints out all the elements in descending order
 {
     cout << arr[i] << " ";
 }
