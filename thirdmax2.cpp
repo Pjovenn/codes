@@ -14,10 +14,10 @@ int len = sizeof(arr)/sizeof(arr[0]); //determine the size of array sizeofarr(4*
 sort(arr, arr+len, greater<int>()); //sorting algorithm that sorts elements in a descending order
     
 
-    /* //bubble sort algorithm
-for(int i=0; i<n-1; i++) //loops 10 times from 0 to 9
+    /* //bubble sort algorithm 
+for(int i=0; i<len-1; i++) //loops 10 times from 0 to 9
 {
-    for(int j=0;j<n-i-1; j++) // loop count is decreased as i increases
+    for(int j=0;j<len-i-1; j++) // loop count is decreased as i increases
     {
         if(arr[j]<arr[j+1]) // implements only when previous element is less than element, swapping as index(j) increases
         {
