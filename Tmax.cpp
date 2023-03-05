@@ -1,5 +1,4 @@
 #include <iostream>
-#include <algorithm>
 
 using namespace std;
 
@@ -78,25 +77,17 @@ int CompThird()
     {
         cout << arr[i] << " ";
     }
+    int maxA, maxB, maxC;
+    int Tmax[3] = {arr[0], arr[1], arr[2]};
 
-    sort(arr, arr+len); //Sort elements in ascending order
-    int maxA = arr[0], maxB = arr[1], maxC = arr[2]; //Initialize maxA,maxB,maxC to first 3 elements
-
-    
-
-    for(int i = 1; i<=(len/3); i++) //Loops from 1 to 3
-    { 
-        if((i*3)!= len) //avoids comparing elements to non-existing elements in the array
+    for(int i=3; i<len; i++)
+    {
+        if(Tmax[i%3]<arr[i])
         {
-            if(maxA < arr[(i*3)] && maxB < arr[(i*3)+1] && maxC < arr[(i*3)+2]) //compares maxA,maxB,maxC to the three next elements 
-            {
-                maxA = arr[(i*3)];  //Assign the values to the three maxes
-                maxB = arr[(i*3)+1];
-                maxC = arr[(i*3)+2];
-            }
+            Tmax[i%3] = arr[i];
         }
-
     }
+    maxA = Tmax[0], maxB = Tmax[1], maxC = Tmax[2];
 
     cout << "\nThe third max value is: ";
     if(maxA < maxB && maxA < maxC)  //Returns maxA as the lowest value of the three maxes
