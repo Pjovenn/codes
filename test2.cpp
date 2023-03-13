@@ -47,5 +47,7 @@ int main()
     }
     cout << endl;
     
+    //rand() % MAX + 1 to get values from 1 to MAX
+    
     return 0;
 }
