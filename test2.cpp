@@ -19,7 +19,7 @@ int main()
     }
     cout << endl;
     
-    numItems = 100;
+    numItems = 1000;
     cout << numItems << endl;
     for (int i = 0; i < numItems; ++i)
     {
@@ -27,7 +27,7 @@ int main()
     }
     cout << endl;
     
-    numItems = 100;
+    numItems = 10000;
     cout << numItems;
     for (int i = 0; i < numItems; ++i)
     {
@@ -37,7 +37,7 @@ int main()
     }
     cout << endl;
     
-    numItems = 100;
+    numItems = 10000;
     cout << numItems;
     for (int i = 0; i < numItems; ++i)
     {
