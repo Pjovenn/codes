@@ -40,7 +40,10 @@ int main()
     int arr[max_size];
     random_device rnd;
     mt19937 rand(rnd());
-
+//mt19937 gen(rd());
+   // uniform_int_distribution<> dis(0, SIZE);
+    // arr[i] = dis(gen);
+    
     for(int i =0; i<max_size; i++)
     {
         arr[i] = rand() % max_size + 1;
